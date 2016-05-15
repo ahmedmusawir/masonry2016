@@ -36,4 +36,30 @@ jQuery(document).ready(function($) {
 			jQuery('#masonry-grid').masonry('layout');
 		}
 	});
+
+
+
+		// BUTTON CLICK
+
+			jQuery("#grid-filter .category").on("click", function() {
+
+				console.log('clicked');
+				// alert($("input[name=optradio]:checked").val());	
+				console.log($(this).val());
+
+				// group = jQuery(this).val();
+				group = jQuery(this).data('value');
+
+				group_class = "." + group;
+				
+				if(group != "") {
+					jQuery(".grid-item").hide();
+					// jQuery(".grid-item").addClass('hide');
+					jQuery(group_class).show();
+					jQuery('#masonry-grid').masonry('layout');
+				} else {
+					jQuery(".grid-item").show();
+					jQuery('#masonry-grid').masonry('layout');
+				}
+			});	
 });
