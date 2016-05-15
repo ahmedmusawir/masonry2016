@@ -1,0 +1,119 @@
+.main-navigation * {
+	padding: 0;
+	margin: 0;
+	/*width: 100%;*/
+
+}
+.main-nav-holder {
+	/*width: 10em;*/
+	/*height: 5em;*/
+}
+
+body {
+	padding: 5em;
+	width: 80%;
+}
+
+
+ul {
+	list-style: none;
+	/*width: 100%;*/
+}
+
+ul li.current_page_item a {
+	
+	background: #081;
+}
+
+ul li {
+	float: left;
+	padding-right: 1px;
+	position: relative;
+}
+
+ul a {
+	display: table-cell;
+	vertical-align: middle;
+	width: 10em;
+	height: 3em;
+	text-align: center;
+	background: #09C;
+	color: #FFF;
+	text-decoration: none;
+}
+
+ul a:hover {
+	background: #09C;
+
+}
+
+li > ul {
+
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 100%;		
+}
+
+li:hover > ul {
+	display: block;
+}
+
+li > ul li {
+	padding: 0;
+	padding-top: 1px;
+}
+
+li > ul li > ul {
+	left: 100%;
+	top: 0;
+	padding-left: 1px;
+
+}
+
+li > ul li > ul li {
+	width: 100px;
+}
+
+li:hover > a {
+	background: #091;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

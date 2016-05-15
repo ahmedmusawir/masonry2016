@@ -1,0 +1,469 @@
+$main-background-color: gray;
+$main-font-color: white;
+$rgba-percent: 0.9;
+$main-nav-color: rgba(55, 55, 55, $rgba-percent);
+
+@media screen and (max-width: 1200px) {
+  /* 10 columns for larger screens */
+    .grid-sizer { width: 5%; }
+    .grid-item {
+  		width: 25%;
+    }
+    #masonry-grid {
+	// width: 100%;
+	// margin: 0 auto;
+	// margin-left: 0rem;
+	}
+	.col-md-moose {
+		width: 100%
+	}
+
+	.sidebar-fixed {
+		float: none;
+		width: 100%;
+		margin-left: 1em;
+	}
+	.widget-sidebar {
+		width: 30%;
+		float: left;
+		margin-right: 2em;
+		// margin: 0 auto;
+		// padding-right: 1.5em;
+	}
+}
+
+@media screen and (max-width: 992px) {
+  /* 10 columns for larger screens */
+    .grid-sizer { width: 8%; }
+    .grid-item {
+  		width: 32%;
+    }
+    #masonry-grid {
+	// width: 100%;
+	// margin: 0 auto;
+		margin-left: 4.5rem;
+	}
+	.col-md-moose {
+		width: 100%
+	}
+
+	.sidebar-fixed {
+		float: none;
+		width: 100%;
+	}
+	.widget-sidebar {
+		width: 30%;
+		float: left;
+		margin-right: 1em;
+	}
+
+	.jumbotron {
+		h1 {
+			font-size: 3em;
+		}
+	}
+
+	// Main Navigation Start for 992 Media Query
+	.main-navigation {
+	
+		width: 100%;
+		height: auto;
+		background-color: $main-background-color - 60;
+
+		.main-nav-holder {
+
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+				padding-top: .5em;
+				// overflow: hidden;
+				height: 6.1em;
+
+			.main-nav-logo {
+					float: none;
+					padding-top: .2em;
+					// padding-bottom: .1em;
+					display: block;
+					text-decoration: none;
+					font-size: 1.5em;
+					
+				}
+
+			.nav-menu {
+				display: none;
+				float: right;
+				text-decoration: none;
+				font-size: 1.5em;
+			}	
+
+			ul {
+			list-style: none;
+			float: none;
+			width: 100%;
+
+					li.current_page_item a {
+						
+						background: #071;
+					}
+
+					li {
+						float: left;
+						padding-right: 1px;
+						position: relative;
+
+						& > ul {
+
+						display: none;
+						position: absolute;
+						left: 0;
+						top: 100%;		
+						}
+
+						&:hover > ul {
+							display: block;
+						}
+
+						& > ul li {
+							padding: 0;
+							padding-top: 1px;
+						}
+
+						& > ul li > ul {
+							left: 100%;
+							top: 0;
+							padding-left: 1px;
+
+						}
+
+						& > ul li > ul li {
+							width: 100px;
+						}
+
+						&:hover > a {
+							background: #091;
+						}
+					}
+
+					a {
+						display: table-cell;
+						vertical-align: middle;
+						// width: 10em;
+						// height: 3em;
+						text-align: center;
+						background: $main-background-color - 90;
+						color: #FFF;
+						text-decoration: none;
+					}
+
+					a:hover {
+						background: #09C;
+
+					}
+				}
+
+	
+		} 
+		// Main Nav holder
+	
+
+	}
+	// Main Navigation
+}
+
+@media screen and (max-width: 767px) {
+  /* 10 columns for larger screens */
+    .grid-sizer { width: 8%; }
+    .grid-item {
+  		width: 32%;
+    }
+    #masonry-grid {
+	// width: 100%;
+	// margin: 0 auto;
+		// margin-left: 4.5rem;
+	}
+	.col-md-moose {
+		width: 100%
+	}
+
+	.sidebar-fixed {
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.widget-sidebar {
+		width: 100%;
+		float: left;
+		background-color: rgba(0,0,0,.2%);
+		// margin: 0 auto;
+		// margin-right: 1.5em;
+	}
+
+	// Main Navigation Start for 992 Media Query
+	.main-navigation {
+	
+		display: block;
+		width: 100%;
+		height: auto;
+		background-color: $main-background-color - 60;
+
+		.main-nav-holder {
+
+			* {
+				// margin: 0;
+				// padding: 0;
+			}
+
+				padding-top: .5em;
+				// overflow: hidden;
+				// height: 6.1em;
+				display: block;
+				width: 100%;
+				height: auto;
+
+			.main-nav-logo {
+					float: left;
+					// padding-top: .1em;
+					padding-bottom: .5em;
+					display: block;
+					text-decoration: none;
+					font-size: 1.5em;
+					
+				}
+
+			.nav-menu {
+				display: block;
+				float: right;
+				text-decoration: none;
+				font-size: 1.5em;
+				padding-top: .2em;
+			}	
+
+			.nav-list {
+				
+				clear: both;
+				display: block;	
+				list-style: none;
+				float: none;
+				width: 100%;
+				overflow: hidden;
+				height: 0;
+				// z-index: 100;
+
+				li {
+					display: block;
+					width: 100%;
+					float: none;
+
+					a {
+						display: block;
+						width: 100%;
+					}
+
+
+					ul {
+						position: relative;
+						display: block;
+						top: inherit;
+						left: 0;
+
+					}
+
+				}
+
+				
+					
+			}
+
+			.nav-open {
+				height: auto;
+			}
+
+	
+		} 
+		// Main Nav holder
+		
+	
+
+	}
+	// Main Navigation
+
+	
+
+}
+
+@media screen and (max-width: 600px) {
+  /* 10 columns for larger screens */
+    .grid-sizer { width: 5%; }
+    .grid-item {
+  		width: 50%;
+    }
+
+    #masonry-grid {
+	// width: 100%;
+	margin: 0 auto;
+		// margin-left: 4.5rem;
+	}
+	.col-md-moose {
+		width: 100%
+	}
+
+	.sidebar-fixed {
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.widget-sidebar {
+		width: 100%;
+		float: left;
+		background-color: rgba(0,0,0,.2%);
+		// margin: 0 auto;
+		// margin-right: 1.5em;
+	}
+
+	.jumbotron {
+		p {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+  /* 10 columns for larger screens */
+    // .grid-sizer { width: 5%; }
+    .grid-item {
+  		width: 100%;
+    }
+
+    #masonry-grid {
+	// width: 100%;
+	margin: 0 auto;
+		// margin-left: 4.5rem;
+	}
+	.col-md-moose {
+		width: 100%
+	}
+
+	.sidebar-fixed {
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.widget-sidebar {
+		width: 100%;
+		float: left;
+		background-color: rgba(0,0,0,.2%);
+		// margin: 0 auto;
+		// margin-right: 1.5em;
+	}
+
+	.jumbotron {
+		display: none;
+		// padding-top: 1em;
+		// padding-bottom: 1em;
+
+		// h1 {
+		// 	font-size: 2em;
+		// }
+	}
+
+		.main-nav {
+	width: 100%;
+	height: auto;
+	// height: 4em;
+	// background-color: rgba(58, 74, 93, 0.9);
+	background-color: $main-background-color - 60;
+
+	.main-nav-holder {
+
+		padding-top: .5em;
+		overflow: hidden;
+
+		.main-nav-logo {
+			float: left;
+			text-decoration: none;
+			font-size: 1.5em;
+			
+		}
+
+		.nav-menu {
+			display: block;
+			float: right;
+			text-decoration: none;
+			font-size: 1.5em;
+		}
+
+		.nav-list {
+			// float: none;
+			// overflow: hidden;
+			width: 100%;
+			height: 0;
+				
+			li {
+				// float: left;
+				// padding: 0em;
+				margin-top: 1.2em;
+				width: 100%;
+
+				a {
+					// display: block;
+					// text-decoration: none;
+					font-size: 1.2em;
+					// color: $main-nav-color + 80;
+					// padding: 0 .5em;
+
+
+					&:hover, &:active {
+						// text-decoration: none;
+						// color: $main-nav-color + 150;
+						// font-size: 1.7em;
+							}
+						}
+
+					}
+				}
+
+			.nav-open {
+					height: auto;
+				}
+
+			}
+
+		}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

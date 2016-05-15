@@ -1,0 +1,233 @@
+$main-background-color: gray;
+$main-font-color: rgba(155, 205, 250, .9);
+$rgba-percent: 0.9;
+$main-nav-color: rgba(55, 55, 55, $rgba-percent);
+$main-font: 'Ubuntu', sans-serif;
+
+@mixin box-shadow() {
+
+}
+
+body {
+	background-color: $main-background-color;
+	font-family: $main-font ;
+}
+
+.main-footer {
+	color: $main-font-color;
+	// padding: .5rem;
+	.footer-widget {
+		// padding: .5rem;
+		// margin-left: 1em;
+		
+		h3 {
+			padding: 2rem;
+		}
+		p {
+			padding: 2rem;
+		}
+	}
+}
+
+
+.jumbotron {
+	text-shadow: 4px 4px 6px #666;
+	h1 {
+		color: white;
+	}
+	p {
+		color: white;
+	}
+
+	
+}
+
+.container {
+	color: $main-font-color;
+}
+
+.col-md-moose {
+	width: 75%;
+	float: left;
+}
+
+.sidebar {
+	color: black;
+	h3, p {
+		padding: 1em;
+	}
+}
+
+.sidebar-fixed {
+	@extend .sidebar;
+	width: 280px;
+	float: right;
+}
+
+.widget-sidebar {
+
+	img {
+		padding-top: 1.5em;
+	}
+}
+
+#masonry-grid {
+	// width: 100%;
+	margin: 0 auto;
+	// margin-left: 0rem;
+}
+
+.grid-item {
+	width: 25%;
+}
+
+.grid-sizer {
+	width: 5%;
+}
+
+.grid-item img {
+	width: 100%;
+	padding: 1em;
+}
+
+.content-block {
+	padding-bottom: 2rem;
+	padding-right: 1rem;
+
+	.btn {
+		border-radius: 0;
+		margin-top: 1rem;
+	}
+
+	p {
+		padding-left: 1rem;
+		padding-bottom: 1rem;
+		padding-top: 1em;
+	}
+	
+}
+
+
+.main-navigation {
+	
+	width: 100%;
+	height: auto;
+	background-color: $main-background-color - 60;
+
+	.main-nav-holder {
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+			padding-top: .5em;
+			// overflow: hidden;
+			height: 4em;
+
+		.main-nav-logo {
+				float: left;
+				padding-top: .3em;
+				display: block;
+				text-decoration: none;
+				font-size: 1.5em;
+				
+			}
+
+		.nav-menu {
+			display: none;
+			float: right;
+			text-decoration: none;
+			font-size: 1.5em;
+		}	
+
+		ul {
+		list-style: none;
+		float: right;
+		margin-top: 0.7em;
+
+				li.current_page_item a {
+					
+					background: #071;
+				}
+
+				li {
+					float: left;
+					padding-right: 1px;
+					position: relative;
+
+					& > ul {
+
+					display: none;
+					position: absolute;
+					margin-top: 0em;
+					left: 0;
+					top: 100%;		
+					}
+
+					&:hover > ul {
+						display: block;
+					}
+
+					& > ul li {
+						padding: 0;
+						padding-top: 1px;
+					}
+
+					& > ul li > ul {
+						left: 100%;
+						top: 0;
+						padding-left: 1px;
+
+					}
+
+					& > ul li > ul li {
+						width: 100px;
+					}
+
+					&:hover > a {
+						background: #091;
+					}
+				}
+
+				a {
+					display: table-cell;
+					vertical-align: middle;
+					width: 10em;
+					height: 3em;
+					text-align: center;
+					background: $main-background-color - 90;
+					color: #FFF;
+					text-decoration: none;
+				}
+
+				a:hover {
+					background: #09C;
+
+				}
+			}
+
+			
+	
+	} 
+	// Main Nav holder
+	
+
+}
+// Main Navigation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

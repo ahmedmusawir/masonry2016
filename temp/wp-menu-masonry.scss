@@ -1,0 +1,106 @@
+$main-background-color: gray;
+$main-font-color: white;
+$rgba-percent: 0.9;
+$main-nav-color: rgba(55, 55, 55, $rgba-percent);
+$main-font: 'Ubuntu', sans-serif;
+
+.main-nav {
+	width: 100%;
+	// height: auto;
+	height: 4em;
+	// background-color: rgba(58, 74, 93, 0.9);
+	background-color: $main-background-color - 60;
+
+	.main-nav-holder {
+
+		padding: .5em;
+		// overflow: hidden;
+		height: auto;
+
+		.main-nav-logo {
+			float: left;
+			display: block;
+			text-decoration: none;
+			font-size: 1.5em;
+			
+		}
+
+		.nav-menu {
+			display: none;
+			float: right;
+			text-decoration: none;
+			font-size: 1.5em;
+		}
+
+
+
+		ul {
+			padding: 0;
+			margin: 0;
+			// float: right;
+			// overflow: hidden;
+			list-style: none;
+				
+			li {
+				padding: 0;
+				margin: 0;
+				float: left;
+				// list-style: none;
+				padding-right: 1px;
+				position: relative;
+				background-color: $main-background-color - 60;
+
+
+				a {
+					display: table-cell;
+					width: 100%;
+					height: 100%;
+					vertical-align: center;
+					text-align: center;
+					text-decoration: none;
+					font-size: 1.5em;
+					color: $main-nav-color + 80;
+					padding: 0 .5em;
+
+
+					&:hover, &:active {
+						// text-decoration: none;
+						color: $main-nav-color + 150;
+						// font-size: 1.7em;
+					}
+				}
+
+				&>ul {
+					display: none;
+					position: absolute;
+					left: 0;
+					top: 100%;
+
+					li {
+						padding: 0;
+						padding-top: 1px;
+
+						&> ul {
+							left: 100%;
+							top: 0;
+							padding-left: 1px;
+
+							li {
+								width: 100%;
+							}
+						}					
+					}
+				}
+
+				&:hover > ul {
+					display: block;
+				}
+
+			}
+		}
+
+		
+
+	}
+
+}

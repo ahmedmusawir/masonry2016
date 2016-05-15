@@ -1,0 +1,96 @@
+body {
+  background-color: gray;
+  font-family: "Ubuntu", sans-serif; }
+
+.main-footer {
+  color: rgba(155, 205, 250, 0.9); }
+  .main-footer .footer-widget h3 {
+    padding: 2rem; }
+  .main-footer .footer-widget p {
+    padding: 2rem; }
+
+.jumbotron {
+  text-shadow: 4px 4px 6px #666; }
+  .jumbotron h1 {
+    color: white; }
+  .jumbotron p {
+    color: white; }
+
+.container {
+  color: rgba(155, 205, 250, 0.9); }
+
+.col-md-moose {
+  width: 75%;
+  float: left; }
+
+.sidebar, .sidebar-fixed {
+  color: black; }
+  .sidebar h3, .sidebar-fixed h3, .sidebar p, .sidebar-fixed p {
+    padding: 1em; }
+
+.sidebar-fixed {
+  width: 280px;
+  float: right; }
+
+.widget-sidebar img {
+  padding-top: 1.5em; }
+
+#masonry-grid {
+  margin: 0 auto; }
+
+.grid-item {
+  width: 25%; }
+
+.grid-sizer {
+  width: 5%; }
+
+.grid-item img {
+  width: 100%;
+  padding: 1em; }
+
+.content-block {
+  padding-bottom: 2rem;
+  padding-right: 1rem; }
+  .content-block .btn {
+    border-radius: 0;
+    margin-top: 1rem; }
+  .content-block p {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1em; }
+
+.main-nav {
+  width: 100%;
+  height: auto;
+  background-color: #444444; }
+  .main-nav .main-nav-holder {
+    padding-top: .5em;
+    overflow: hidden; }
+    .main-nav .main-nav-holder .main-nav-logo {
+      float: left;
+      display: block;
+      text-decoration: none;
+      font-size: 1.5em; }
+    .main-nav .main-nav-holder .nav-menu {
+      display: none;
+      float: right;
+      text-decoration: none;
+      font-size: 1.5em; }
+    .main-nav .main-nav-holder .nav-list {
+      padding: 0;
+      float: right;
+      overflow: hidden; }
+      .main-nav .main-nav-holder .nav-list li {
+        float: left;
+        list-style: none;
+        padding: 0em; }
+        .main-nav .main-nav-holder .nav-list li a {
+          display: block;
+          text-decoration: none;
+          font-size: 1.5em;
+          color: rgba(135, 135, 135, 0.9);
+          padding: 0 .5em; }
+          .main-nav .main-nav-holder .nav-list li a:hover, .main-nav .main-nav-holder .nav-list li a:active {
+            color: rgba(205, 205, 205, 0.9); }
+
+/**** Transitions ****/

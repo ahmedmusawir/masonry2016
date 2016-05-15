@@ -1,0 +1,245 @@
+@media screen and (max-width: 1200px) {
+  /* 10 columns for larger screens */
+  .grid-sizer {
+    width: 5%; }
+
+  .grid-item {
+    width: 25%; }
+
+  .col-md-moose {
+    width: 100%; }
+
+  .sidebar-fixed {
+    float: none;
+    width: 100%;
+    margin-left: 1em; }
+
+  .widget-sidebar {
+    width: 30%;
+    float: left;
+    margin-right: 2em; } }
+@media screen and (max-width: 992px) {
+  /* 10 columns for larger screens */
+  .grid-sizer {
+    width: 8%; }
+
+  .grid-item {
+    width: 32%; }
+
+  #masonry-grid {
+    margin-left: 4.5rem; }
+
+  .col-md-moose {
+    width: 100%; }
+
+  .sidebar-fixed {
+    float: none;
+    width: 100%; }
+
+  .widget-sidebar {
+    width: 30%;
+    float: left;
+    margin-right: 1em; }
+
+  .jumbotron h1 {
+    font-size: 3em; }
+
+  .main-navigation {
+    width: 100%;
+    height: auto;
+    background-color: #444444; }
+    .main-navigation .main-nav-holder {
+      padding-top: .5em;
+      height: 6.1em; }
+      .main-navigation .main-nav-holder * {
+        margin: 0;
+        padding: 0; }
+      .main-navigation .main-nav-holder .main-nav-logo {
+        float: none;
+        padding-top: .2em;
+        display: block;
+        text-decoration: none;
+        font-size: 1.5em; }
+      .main-navigation .main-nav-holder .nav-menu {
+        display: none;
+        float: right;
+        text-decoration: none;
+        font-size: 1.5em; }
+      .main-navigation .main-nav-holder ul {
+        list-style: none;
+        float: none;
+        width: 100%; }
+        .main-navigation .main-nav-holder ul li.current_page_item a {
+          background: #071; }
+        .main-navigation .main-nav-holder ul li {
+          float: left;
+          padding-right: 1px;
+          position: relative; }
+          .main-navigation .main-nav-holder ul li > ul {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%; }
+          .main-navigation .main-nav-holder ul li:hover > ul {
+            display: block; }
+          .main-navigation .main-nav-holder ul li > ul li {
+            padding: 0;
+            padding-top: 1px; }
+          .main-navigation .main-nav-holder ul li > ul li > ul {
+            left: 100%;
+            top: 0;
+            padding-left: 1px; }
+          .main-navigation .main-nav-holder ul li > ul li > ul li {
+            width: 100px; }
+          .main-navigation .main-nav-holder ul li:hover > a {
+            background: #091; }
+        .main-navigation .main-nav-holder ul a {
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+          background: #262626;
+          color: #FFF;
+          text-decoration: none; }
+        .main-navigation .main-nav-holder ul a:hover {
+          background: #09C; } }
+@media screen and (max-width: 767px) {
+  /* 10 columns for larger screens */
+  .grid-sizer {
+    width: 8%; }
+
+  .grid-item {
+    width: 32%; }
+
+  .col-md-moose {
+    width: 100%; }
+
+  .sidebar-fixed {
+    float: none;
+    width: 100%;
+    margin: 0 auto; }
+
+  .widget-sidebar {
+    width: 100%;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.2); }
+
+  .main-navigation {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: #444444; }
+    .main-navigation .main-nav-holder {
+      padding-top: .5em;
+      display: block;
+      width: 100%;
+      height: auto; }
+      .main-navigation .main-nav-holder .main-nav-logo {
+        float: left;
+        padding-bottom: .5em;
+        display: block;
+        text-decoration: none;
+        font-size: 1.5em; }
+      .main-navigation .main-nav-holder .nav-menu {
+        display: block;
+        float: right;
+        text-decoration: none;
+        font-size: 1.5em;
+        padding-top: .2em; }
+      .main-navigation .main-nav-holder .nav-list {
+        clear: both;
+        display: block;
+        list-style: none;
+        float: none;
+        width: 100%;
+        overflow: hidden;
+        height: 0; }
+        .main-navigation .main-nav-holder .nav-list li {
+          display: block;
+          width: 100%;
+          float: none; }
+          .main-navigation .main-nav-holder .nav-list li a {
+            display: block;
+            width: 100%; }
+          .main-navigation .main-nav-holder .nav-list li ul {
+            position: relative;
+            display: block;
+            top: inherit;
+            left: 0; }
+      .main-navigation .main-nav-holder .nav-open {
+        height: auto; } }
+@media screen and (max-width: 600px) {
+  /* 10 columns for larger screens */
+  .grid-sizer {
+    width: 5%; }
+
+  .grid-item {
+    width: 50%; }
+
+  #masonry-grid {
+    margin: 0 auto; }
+
+  .col-md-moose {
+    width: 100%; }
+
+  .sidebar-fixed {
+    float: none;
+    width: 100%;
+    margin: 0 auto; }
+
+  .widget-sidebar {
+    width: 100%;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.2); }
+
+  .jumbotron p {
+    display: none; } }
+@media screen and (max-width: 480px) {
+  /* 10 columns for larger screens */
+  .grid-item {
+    width: 100%; }
+
+  #masonry-grid {
+    margin: 0 auto; }
+
+  .col-md-moose {
+    width: 100%; }
+
+  .sidebar-fixed {
+    float: none;
+    width: 100%;
+    margin: 0 auto; }
+
+  .widget-sidebar {
+    width: 100%;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.2); }
+
+  .jumbotron {
+    display: none; }
+
+  .main-nav {
+    width: 100%;
+    height: auto;
+    background-color: #444444; }
+    .main-nav .main-nav-holder {
+      padding-top: .5em;
+      overflow: hidden; }
+      .main-nav .main-nav-holder .main-nav-logo {
+        float: left;
+        text-decoration: none;
+        font-size: 1.5em; }
+      .main-nav .main-nav-holder .nav-menu {
+        display: block;
+        float: right;
+        text-decoration: none;
+        font-size: 1.5em; }
+      .main-nav .main-nav-holder .nav-list {
+        width: 100%;
+        height: 0; }
+        .main-nav .main-nav-holder .nav-list li {
+          margin-top: 1.2em;
+          width: 100%; }
+          .main-nav .main-nav-holder .nav-list li a {
+            font-size: 1.2em; }
+      .main-nav .main-nav-holder .nav-open {
+        height: auto; } }

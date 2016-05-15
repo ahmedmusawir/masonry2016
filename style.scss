@@ -1,0 +1,265 @@
+$main-background-color: gray;
+$main-font-color: rgba(155, 205, 250, .9);
+$rgba-percent: 0.9;
+$main-nav-color: rgba(55, 55, 55, $rgba-percent);
+$main-font: 'Ubuntu', sans-serif;
+
+@mixin box-shadow() {
+
+}
+
+body {
+	background-color: $main-background-color;
+	font-family: $main-font ;
+}
+
+.main-footer {
+	color: $main-font-color;
+	// padding: .5rem;
+	.footer-widget {
+		// padding: .5rem;
+		// margin-left: 1em;
+		background-color: $main-nav-color;
+		border: 1px solid gray;
+
+		-webkit-box-shadow: 9px 8px 22px 3px rgba(0,0,0,0.75);
+		-moz-box-shadow: 9px 8px 22px 3px rgba(0,0,0,0.75);
+		box-shadow: 9px 8px 22px 3px rgba(0,0,0,0.75);
+		
+		h3 {
+			padding: 2rem;
+		}
+		p {
+			padding: 2rem;
+		}
+	}
+}
+
+
+.jumbotron {
+
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+
+
+
+	text-shadow: 4px 4px 6px #666;
+	h1 {
+		color: white;
+	}
+	p {
+		color: white;
+	}
+
+	
+}
+
+.container {
+	color: $main-font-color;
+}
+
+.col-md-moose {
+	width: 75%;
+	float: left;
+}
+
+.sidebar {
+	color: white;
+
+	h3, p {
+		padding: 1em;
+	}
+}
+
+.sidebar-fixed {
+	@extend .sidebar;
+	width: 280px;
+	float: right;
+}
+
+.widget-sidebar {
+	background-color: lighten(#262626, 25%);
+	border: 1px solid gray;
+
+	-webkit-box-shadow: 9px 8px 22px 3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 9px 8px 22px 3px rgba(0,0,0,0.75);
+	box-shadow: 9px 8px 22px 3px rgba(0,0,0,0.75);
+
+	img {
+		padding-top: 1.5em;
+	}
+}
+
+#masonry-grid {
+	// width: 100%;
+	margin: 0 auto;
+	// margin-left: 0rem;
+}
+
+.grid-item {
+	width: 25%;
+	// -webkit-box-shadow: 9px 8px 22px 3px rgba(0,0,0,0.75);
+	// -moz-box-shadow: 9px 8px 22px 3px rgba(0,0,0,0.75);
+	// box-shadow: 9px 8px 22px 3px rgba(0,0,0,0.75);
+
+	-webkit-box-shadow: 9px 13px 26px 1px rgba(46,44,46,1);
+	-moz-box-shadow: 9px 13px 26px 1px rgba(46,44,46,1);
+	box-shadow: 9px 13px 26px 1px rgba(46,44,46,1);
+}
+
+.grid-sizer {
+	width: 5%;
+}
+
+.grid-item img {
+	width: 100%;
+	padding: 1em;
+}
+
+.content-block {
+	padding-bottom: 2rem;
+	padding-right: 1rem;
+
+	.btn {
+		border-radius: 0;
+		margin-top: 1rem;
+	}
+
+	p {
+		padding-left: 1rem;
+		padding-bottom: 1rem;
+		padding-top: 1em;
+	}
+	
+}
+
+
+.main-navigation {
+	
+	width: 100%;
+	height: auto;
+	background-color: $main-background-color - 60;
+
+	.main-nav-holder {
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+			padding-top: .5em;
+			// overflow: hidden;
+			height: 4em;
+
+		.main-nav-logo {
+				float: left;
+				padding-top: .3em;
+				display: block;
+				text-decoration: none;
+				font-size: 1.5em;
+				
+			}
+
+		.nav-menu {
+			display: none;
+			float: right;
+			text-decoration: none;
+			font-size: 1.5em;
+		}	
+
+		ul {
+		list-style: none;
+		float: right;
+		margin-top: 0.7em;
+
+				li.current_page_item a {
+					
+					background: #071;
+				}
+
+				li {
+					float: left;
+					padding-right: 1px;
+					position: relative;
+
+					& > ul {
+
+					display: none;
+					position: absolute;
+					margin-top: 0em;
+					left: 0;
+					top: 100%;		
+					}
+
+					&:hover > ul {
+						display: block;
+					}
+
+					& > ul li {
+						padding: 0;
+						padding-top: 1px;
+					}
+
+					& > ul li > ul {
+						left: 100%;
+						top: 0;
+						padding-left: 1px;
+
+					}
+
+					& > ul li > ul li {
+						width: 100px;
+					}
+
+					&:hover > a {
+						background: #091;
+					}
+				}
+
+				a {
+					display: table-cell;
+					vertical-align: middle;
+					width: 10em;
+					height: 3em;
+					text-align: center;
+					background: $main-background-color - 90;
+					color: #FFF;
+					text-decoration: none;
+				}
+
+				a:hover {
+					background: #09C;
+
+				}
+			}
+
+			
+	
+	} 
+	// Main Nav holder
+	
+
+}
+// Main Navigation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,122 @@
+body {
+  background-color: gray;
+  font-family: "Ubuntu", sans-serif; }
+
+.main-footer {
+  color: rgba(155, 205, 250, 0.9); }
+  .main-footer .footer-widget h3 {
+    padding: 2rem; }
+  .main-footer .footer-widget p {
+    padding: 2rem; }
+
+.jumbotron {
+  text-shadow: 4px 4px 6px #666; }
+  .jumbotron h1 {
+    color: white; }
+  .jumbotron p {
+    color: white; }
+
+.container {
+  color: rgba(155, 205, 250, 0.9); }
+
+.col-md-moose {
+  width: 75%;
+  float: left; }
+
+.sidebar, .sidebar-fixed {
+  color: black; }
+  .sidebar h3, .sidebar-fixed h3, .sidebar p, .sidebar-fixed p {
+    padding: 1em; }
+
+.sidebar-fixed {
+  width: 280px;
+  float: right; }
+
+.widget-sidebar img {
+  padding-top: 1.5em; }
+
+#masonry-grid {
+  margin: 0 auto; }
+
+.grid-item {
+  width: 25%; }
+
+.grid-sizer {
+  width: 5%; }
+
+.grid-item img {
+  width: 100%;
+  padding: 1em; }
+
+.content-block {
+  padding-bottom: 2rem;
+  padding-right: 1rem; }
+  .content-block .btn {
+    border-radius: 0;
+    margin-top: 1rem; }
+  .content-block p {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1em; }
+
+.main-navigation {
+  width: 100%;
+  height: auto;
+  background-color: #444444; }
+  .main-navigation .main-nav-holder {
+    padding-top: .5em;
+    height: 4em; }
+    .main-navigation .main-nav-holder * {
+      margin: 0;
+      padding: 0; }
+    .main-navigation .main-nav-holder .main-nav-logo {
+      float: left;
+      padding-top: .3em;
+      display: block;
+      text-decoration: none;
+      font-size: 1.5em; }
+    .main-navigation .main-nav-holder .nav-menu {
+      display: none;
+      float: right;
+      text-decoration: none;
+      font-size: 1.5em; }
+    .main-navigation .main-nav-holder ul {
+      list-style: none;
+      float: right;
+      margin-top: 0.7em; }
+      .main-navigation .main-nav-holder ul li.current_page_item a {
+        background: #071; }
+      .main-navigation .main-nav-holder ul li {
+        float: left;
+        padding-right: 1px;
+        position: relative; }
+        .main-navigation .main-nav-holder ul li > ul {
+          display: none;
+          position: absolute;
+          margin-top: 0em;
+          left: 0;
+          top: 100%; }
+        .main-navigation .main-nav-holder ul li:hover > ul {
+          display: block; }
+        .main-navigation .main-nav-holder ul li > ul li {
+          padding: 0;
+          padding-top: 1px; }
+        .main-navigation .main-nav-holder ul li > ul li > ul {
+          left: 100%;
+          top: 0;
+          padding-left: 1px; }
+        .main-navigation .main-nav-holder ul li > ul li > ul li {
+          width: 100px; }
+        .main-navigation .main-nav-holder ul li:hover > a {
+          background: #091; }
+      .main-navigation .main-nav-holder ul a {
+        display: table-cell;
+        vertical-align: middle;
+        width: 10em;
+        height: 3em;
+        text-align: center;
+        background: #262626;
+        color: #FFF;
+        text-decoration: none; }
+      .main-navigation .main-nav-holder ul a:hover {
+        background: #09C; }
